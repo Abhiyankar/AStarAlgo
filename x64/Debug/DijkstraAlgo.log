@@ -1,0 +1,18 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (DijkstraAlgo.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  main.cpp
+C:\Users\abhis\source\repos\DijkstraAlgo\main.cpp(529,69): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\abhis\source\repos\DijkstraAlgo\main.cpp(529,51): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+main.obj : error LNK2019: unresolved external symbol SDL_CreateWindow referenced in function main
+main.obj : error LNK2019: unresolved external symbol SDL_DestroyWindow referenced in function main
+main.obj : error LNK2019: unresolved external symbol SDL_PollEvent referenced in function main
+main.obj : error LNK2019: unresolved external symbol SDL_CreateRenderer referenced in function main
+main.obj : error LNK2019: unresolved external symbol SDL_SetRenderDrawColor referenced in function "void __cdecl draw_rectF(struct SDL_Rect *,struct color,struct SDL_Renderer *)" (?draw_rectF@@YAXPEAUSDL_Rect@@Ucolor@@PEAUSDL_Renderer@@@Z)
+main.obj : error LNK2019: unresolved external symbol SDL_RenderClear referenced in function main
+main.obj : error LNK2019: unresolved external symbol SDL_RenderFillRect referenced in function "void __cdecl draw_rectF(struct SDL_Rect *,struct color,struct SDL_Renderer *)" (?draw_rectF@@YAXPEAUSDL_Rect@@Ucolor@@PEAUSDL_Renderer@@@Z)
+main.obj : error LNK2019: unresolved external symbol SDL_RenderPresent referenced in function main
+main.obj : error LNK2019: unresolved external symbol SDL_Init referenced in function main
+main.obj : error LNK2019: unresolved external symbol SDL_Quit referenced in function main
+C:\SDL2-2.0.12\lib\x86\SDL2.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\SDL2-2.0.12\lib\x86\SDL2main.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\SDL2-2.0.12\lib\x86\SDL2_image.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\Users\abhis\source\repos\DijkstraAlgo\x64\Debug\AstarAlgorithm.exe : fatal error LNK1120: 10 unresolved externals
