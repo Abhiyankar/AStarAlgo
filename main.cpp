@@ -562,12 +562,20 @@ int main()
                             astar.aStarSearch();
                             std::stack<std::pair<int, int>> storedPath = astar.getPath();
                             //aStarSearch(blocks);
-                            storedPath.pop();
-                            while (storedPath.size()>1) {
-                                std::pair<int, int> p = storedPath.top();
+                            if (storedPath.size() == 0)
+                            {
+                                mode = mode::RESET;
+                                std::cout << "Path Not Present" << std::endl;
+                            }
+                            else
+                            {
                                 storedPath.pop();
-                                //printf("-> (%d,%d) ", p.first, p.second);
-                                blocks[p.first][p.second].col = color{ 255,126,200,255 };
+                                while (storedPath.size() > 1) {
+                                    std::pair<int, int> p = storedPath.top();
+                                    storedPath.pop();
+                                    //printf("-> (%d,%d) ", p.first, p.second);
+                                    blocks[p.first][p.second].col = color{ 255,126,200,255 };
+                                }
                             }
                         }
                         break;
